@@ -50,7 +50,7 @@ const ContactForm = ({ errors, touched, setFieldValue, isSubmitting }) => {
           try {
             await axios({
               method: 'POST',
-              url: `${process.env.GATSBY_FORMIK_ENDPOINT}`,
+              url: `""`,
               headers: {
                 'Content-Type': 'application/json',
               },

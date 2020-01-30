@@ -6,13 +6,13 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://smakosh.com',
+    siteUrl: 'https://isaackiptanui.com',
     rssMetadata: {
-      site_url: 'https://smakosh.com',
+      site_url: 'https://isaackiptanui.com',
       feed_url: `${config.url}${config.siteRss}`,
-      title: 'Smakosh | Blog',
+      title: 'isaackiptanui | Blog',
       description: config.defaultDescription,
-      image_url: 'https://smakosh.com/static/favicon/logo-512.png',
+      image_url: 'https://isaackiptanui.com/static/favicon/logo-512.png',
       author: config.author,
       copyright: `${config.defaultTitle} © ${new Date().getFullYear()}`,
     },
@@ -30,7 +30,7 @@ module.exports = {
         fieldName: 'github',
         url: 'https://api.github.com/graphql',
         headers: {
-          Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+          // Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
         },
         fetchOptions: {},
       },
@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: process.env.MC_ENDPOINT,
+        // endpoint: process.env.MC_ENDPOINT,
       },
     },
     {
@@ -98,7 +98,7 @@ module.exports = {
 							}
 						}`,
             output: config.siteRss,
-            title: 'Smakosh | Blog',
+            title: 'isaackiptanui | Blog',
           },
         ],
       },
